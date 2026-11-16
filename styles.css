@@ -1,1 +1,93 @@
 /*  your css code here. If applicable */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.container {
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.input-group input {
+  padding: 8px;
+  width: 220px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#submit {
+  margin-top: 10px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #f0f0f0;
+}
+
+.message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  min-height: 28px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ffc0cb;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.win {
+  background-color: #800080;
+  color: #fff;
+}
